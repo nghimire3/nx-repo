@@ -1,0 +1,67 @@
+$light :  green;
+$dark : #222121;
+$lime : #00cc66;
+$orangeRed : #fb4b4e;
+$blue : #2541b2;
+
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background: $light;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  z-index: 10;
+
+  .logo-box {
+    padding: 20px;
+    top: 60px;
+    left: 40px;
+
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  &__menu {
+    @extend %align-center;
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+
+
+    &--links {
+      color: white;
+      @extend %align-center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+
+      &:hover {
+        color: $lime;
+        transition: all 0.3s ease ;
+      }
+    }
+
+    #button {
+      padding: 12px 24px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $lime;
+      margin-left: 16px;
+      color: white;
+
+      &:hover {
+        background: $orangeRed;
+      }
+
+    }
+  }
+}

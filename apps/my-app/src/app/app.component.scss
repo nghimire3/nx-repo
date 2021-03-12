@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr 25px;
+  height: 100%;
+}
+
+.header {
+}
+
+.content {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.footer {
+}

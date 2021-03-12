@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ecommerce/products": ["libs/products/src/index.ts"],
+      "@ecommerce/members": ["libs/members/src/index.ts"],
+      "@ecommerce/products/feature-shell": [
+        "libs/products/feature-shell/src/index.ts"
+      ],
+      "@ecommerce/products/ui-products": [
+        "libs/products/ui-products/src/index.ts"
+      ],
+      "@ecommerce/products/data-access": [
+        "libs/products/data-access/src/index.ts"
+      ],
+      "@ecommerce/products/models": ["libs/products/models/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

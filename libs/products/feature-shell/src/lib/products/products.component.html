@@ -1,0 +1,9 @@
+<div class='product-container'>
+  <div class='product-list'>
+    <ecommerce-products-list [products]="products"  (addMode)= "addProductMode($event)"></ecommerce-products-list>
+  </div>
+  <div *ngIf='productAddMode'  class='product-add'>
+    <ecommerce-product-add (cancelAddMode)= "addProductMode($event)" ></ecommerce-product-add>
+  </div>
+</div>
+
