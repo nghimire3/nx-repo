@@ -1,2 +1,1 @@
-export * from './lib/products-list/products-list.component';
-export * from './lib/product-add/product-add.component';
+export * from './lib/ui-ecommerce-products.module';

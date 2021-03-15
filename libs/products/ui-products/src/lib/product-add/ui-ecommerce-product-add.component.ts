@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'ecommerce-product-add',
-  templateUrl: './product-add.component.html',
-  styleUrls: ['./product-add.component.scss'],
+  selector: 'ui-ecommerce-product-add',
+  templateUrl: './ui-ecommerce-product-add.component.html',
+  styleUrls: ['ui-ecommerce-product-add.component.scss'],
 })
-export class ProductAddComponent implements OnInit {
+export class UiEcommerceProductAddComponent implements OnInit {
   @Input() productAddMode: boolean;
   @Output() cancelAddMode = new EventEmitter();
   constructor() { }
@@ -16,5 +16,4 @@ export class ProductAddComponent implements OnInit {
   cancelAdd() {
     this.cancelAddMode.emit(false);
   }
-
 }

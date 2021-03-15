@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Product } from '@ecommerce/products/models';
+import { ProductsFeatureShellModule } from '@ecommerce/products/feature-shell';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: ProductsFeatureShellModule,
 })
 export class ProductService {
   products: Product[];
@@ -47,7 +48,7 @@ export class ProductService {
       name: "Product 5",
       detail: "Lorem ipsum dolor sit amet",
       price: "877",
-      image: "http://placehold.it/300x300/999/CCC"
+      image: 'http://placehold.it/300x300/999/CCC'
     },{
       id: 7,
       name: "Product 6",

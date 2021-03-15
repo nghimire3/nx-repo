@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { Product } from '@ecommerce/products/models';
-import { ProductService } from '@ecommerce/products/data-access';
+import { ProductService } from '../../../../data-access/src/lib/product.service';
 
 @Component({
   selector: 'ecommerce-products',
@@ -17,8 +17,7 @@ export class ProductsComponent implements OnInit {
     this.products = this._productService.getProducts();
   }
 
-  addProductMode(event: boolean) {
+  onAddProductClick(event: boolean) {
     this.productAddMode = event;
-    console.log(this.productAddMode);
   }
 }
