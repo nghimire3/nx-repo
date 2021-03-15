@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UiEcommerceProductAddComponent } from './product-add/ui-ecommerce-product-add.component';
-import { UiEcommerceProductsListComponent } from './products-list/ui-ecommerce-products-list.component';
+import { UiEcommerceProductAddComponent } from './ui-product-add/ui-ecommerce-product-add.component';
+import { UiEcommerceProductsListComponent } from './ui-products-list/ui-ecommerce-products-list.component';
 
 @NgModule({
   imports: [
@@ -10,4 +10,4 @@ import { UiEcommerceProductsListComponent } from './products-list/ui-ecommerce-p
   declarations: [UiEcommerceProductAddComponent, UiEcommerceProductsListComponent],
   exports: [UiEcommerceProductAddComponent, UiEcommerceProductsListComponent]
 })
-export class UIEcommerceProductsModule {}
+export class UIProductsModule {}

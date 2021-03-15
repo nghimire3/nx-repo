@@ -1,1 +1,1 @@
-export * from './lib/ui-ecommerce-products.module';
+export * from './lib/ui-products.module';

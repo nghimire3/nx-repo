@@ -1,16 +1,16 @@
 .product-container {
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 100px 1fr 1fr;
 }
 
 .product-list {
-  padding-left: 300px;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .product-add {
-  padding-right: 300px;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  margin: 0;
+  grid-column-start: 3;
+  grid-column-end: -1;
 }

@@ -2,21 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsFeatureShellRoutingModule } from './products-feature-shell-routing.module';
 import { ProductDataAccessModule } from '@ecommerce/products/data-access';
-import { ProductsComponent } from './products/products.component';
-import { UIEcommerceProductsModule } from '@ecommerce/products/ui-products';
+import { ProductsContainerComponent } from './products/products-container.component';
+import { UIProductsModule } from '@ecommerce/products/ui-products';
 
 @NgModule({
   imports: [
     CommonModule,
-    // Imports the source module, with its exports (ui-ecommerce-products-list.html and ui-ecommerce-product-add.html)
-    UIEcommerceProductsModule,
+    // Imports the source module, with its exports (ui-ecommerce-ui-products-list.html and ui-ecommerce-ui-product-add.html)
+    UIProductsModule,
     ProductsFeatureShellRoutingModule,
     ProductDataAccessModule,
   ],
   // Enable using the these html tag in current module
-  declarations: [ProductsComponent],
+  declarations: [ProductsContainerComponent],
 
   //Enable using the these html tag in another module
-  exports: [ProductsComponent, CommonModule],
+  exports: [ProductsContainerComponent, CommonModule],
 })
 export class ProductsFeatureShellModule {}
