@@ -2,7 +2,7 @@
   <div class='product-list'>
     <!--    Passes the products to ui-ecommerce-ui-products-list-->
     <!--    Receive the boolean emit value that opens the addProduct form. -->
-    <ui-ecommerce-products-list  [products]="products"  (addMode)= "onAddProductClick($event)"></ui-ecommerce-products-list>
+    <ui-ecommerce-products-list  [products]="products$"  (addMode)= "onAddProductClick($event)"></ui-ecommerce-products-list>
   </div>
 
   <div *ngIf='productAddMode'  class='product-add'>

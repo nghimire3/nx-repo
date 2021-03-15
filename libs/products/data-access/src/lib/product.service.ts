@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product } from '@ecommerce/products/models';
 import { ProductsFeatureShellModule } from '@ecommerce/products/feature-shell';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: ProductsFeatureShellModule,
@@ -60,14 +61,8 @@ export class ProductService {
   }
 
   // Get list of products
-  getProducts(): Product[] {
-    return this.products;
-  }
-
-  // Get single product based on ID provided
-  getProduct(id) {
-    let products:Product[]=this.getProducts();
-    return products.find(p => p.id == id);
+  getProducts(): Observable<Product[]> {
+    return of(this.products);
   }
 
 }

@@ -5,10 +5,10 @@ import { ProductService } from '../../../../data-access/src/lib/product.service'
 @Component({
   selector: 'ecommerce-products',
   templateUrl: './products-container.component.html',
-  styleUrls: ['./products.component.scss'],
+  styleUrls: ['./products-container.component.scss'],
 })
 export class ProductsContainerComponent implements OnInit {
-  products: Product[];
+  products$: Product[];
 
   /*
     Initially when the products is rendered to the component, the addProduct form is disabled by setting productAddMode to false
@@ -18,7 +18,9 @@ export class ProductsContainerComponent implements OnInit {
   constructor(private _productService: ProductService) { }
 
   ngOnInit(): void {
-    this.products = this._productService.getProducts();
+    this._productService.getProducts().subscribe(products => {
+      this.products$ = products
+    })
   }
 
   // Open up the product add form by setting the productAddMode to true
