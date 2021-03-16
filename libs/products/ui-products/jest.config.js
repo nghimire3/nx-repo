@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'products-ui-products',
+  displayName: 'products-container-ui-products-container',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/libs/products/ui-products',
+  coverageDirectory: '../../../coverage/libs/products-container/ui-products-container',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

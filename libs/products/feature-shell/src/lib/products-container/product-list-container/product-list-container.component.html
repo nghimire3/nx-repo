@@ -1,0 +1,19 @@
+<div>
+  <button *ngIf='collapseButtonIsEnabled' (click)="collapsedButton()" >
+    <i class="fa fa-expand"></i>
+  </button>
+  <button *ngIf='!collapseButtonIsEnabled' (click)="expandedButton()" >
+    <i class="fa fa-compress"> </i>
+  </button>
+</div>
+
+
+<div class='product-list-container'>
+  <div class='action-bar'>
+    <ui-ecommerce-action-bar></ui-ecommerce-action-bar>
+  </div>
+  <div class='products-list'>
+    <ui-ecommerce-products-list [products]="products$"></ui-ecommerce-products-list>
+  </div>
+</div>
+

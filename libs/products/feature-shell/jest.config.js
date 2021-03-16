@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'products-feature-shell',
+  displayName: 'products-container-feature-shell',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/libs/products/feature-shell',
+  coverageDirectory: '../../../coverage/libs/products-container/feature-shell',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

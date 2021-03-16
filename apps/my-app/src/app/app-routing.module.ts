@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   //1. Change here
   //2. Smart and dumb (Only input and output)
-  //3. Four library -- Create folder products (responsible for products (ProductSmart, ProductDumb, ProductService, ProductModels)
+  //3. Four library -- Create folder products-container (responsible for products-container (ProductSmart, ProductDumb, ProductService, ProductModels)
   //4. FeatureShell,
 ];
 

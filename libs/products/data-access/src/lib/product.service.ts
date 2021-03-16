@@ -60,7 +60,7 @@ export class ProductService {
     }]
   }
 
-  // Get list of products
+  // Get list of products-container
   getProducts(): Observable<Product[]> {
     return of(this.products);
   }

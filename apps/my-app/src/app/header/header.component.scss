@@ -1,4 +1,4 @@
-$light :  green;
+$light :  #333333;
 $dark : #222121;
 $lime : #00cc66;
 $orangeRed : #fb4b4e;
@@ -11,7 +11,7 @@ $blue : #2541b2;
 }
 
 .navbar {
-  background: $light;
+  background: #333333;
   height: 100%;
   display: flex;
   cursor: pointer;

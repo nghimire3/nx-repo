@@ -1,5 +1,4 @@
 table {
-  margin: 50px;
   border-collapse: collapse;
 }
 
@@ -13,19 +12,14 @@ a {
   background-color: #4bc970;
 }
 
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: #eee;
-}
 
 th {
-  background: #3498db;
   color: white;
   font-weight: bold;
 }
 
 td, th{
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   text-align: left;
   font-size: 18px;

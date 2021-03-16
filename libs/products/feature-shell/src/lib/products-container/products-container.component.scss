@@ -1,0 +1,41 @@
+//This style will be applied when collapsed mode is true
+.collapse-container {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+
+  .product-list {
+    border: 1px solid black;
+    background-color: darkgreen;
+    color: white;
+    text-align: right;
+  }
+
+  .product-details {
+    text-align: center;
+    border: 1px solid black;
+  }
+}
+
+//This style will be applied when expanded mode is true
+.expanded-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+
+  .product-list {
+    border: 1px solid black;
+    background-color: darkgreen;
+    color: white;
+    text-align: right;
+  }
+
+  .product-details {
+    text-align: center;
+    border: 1px solid black;
+  }
+}
