@@ -8,11 +8,18 @@ import { HomeComponent } from './content/home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-import { ProductsFeatureShellModule } from '@ecommerce/products/feature-shell';
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, FooterComponent, HomeComponent, HeaderComponent],
-  imports: [BrowserModule, AppRoutingModule,ProductsFeatureShellModule, RouterModule],
+  declarations: [AppComponent,
+    ContentComponent,
+    FooterComponent,
+    HomeComponent,
+    HeaderComponent],
+
+  imports: [BrowserModule,
+    AppRoutingModule,
+    RouterModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })
