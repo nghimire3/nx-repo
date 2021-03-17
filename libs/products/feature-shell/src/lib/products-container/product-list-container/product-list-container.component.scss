@@ -8,13 +8,11 @@
   border-radius: 10px;
 
   .action-bar {
-    border: 1px solid white;
     grid-row-start: 0;
     grid-row-end: 1;
   }
 
   .products-list {
-    border: 1px solid white;
     grid-row-start: 1;
     grid-row-end: -1;
   }
