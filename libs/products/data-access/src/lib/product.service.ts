@@ -1,11 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Product } from '@ecommerce/products/models';
-import { ProductsFeatureShellModule } from '@ecommerce/products/feature-shell';
 import { Observable, of } from 'rxjs';
 
-@Injectable({
-  providedIn: ProductsFeatureShellModule,
-})
+@Injectable()
 export class ProductService {
   products: Product[];
 

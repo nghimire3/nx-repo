@@ -9,10 +9,6 @@ const routes: Routes = [
     path: 'products',
     loadChildren: () => import('@ecommerce/products/feature-shell').then(m => m.ProductsFeatureShellModule)
   },
-  //1. Change here
-  //2. Smart and dumb (Only input and output)
-  //3. Four library -- Create folder products-container (responsible for products-container (ProductSmart, ProductDumb, ProductService, ProductModels)
-  //4. FeatureShell,
 ];
 
 @NgModule({
