@@ -1,7 +1,7 @@
 import { EventEmitter, Input } from '@angular/core';
 import { Component, OnInit, Output } from '@angular/core';
 import { Product } from '@ecommerce/products/models';
-import { ProductService } from '../../../../../data-access/src/lib/product.service';
+import { ProductService } from '@ecommerce/products/data-access';
 
 @Component({
   selector: 'ecommerce-product-list-container',
