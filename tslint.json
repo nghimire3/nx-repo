@@ -1,0 +1,27 @@
+{
+  "rulesDirectory": [
+    "node_modules/@nrwl/workspace/src/tslint"
+  ],
+  "rules": {
+    "nx-enforce-module-boundaries": [
+      true,
+      {
+        "allow": [""],
+        "depConstraints": [
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": ["type:ui", "type:data-access", "type:model"]
+          },
+          {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": [ "type:model"]
+          },
+          {
+            "sourceTag": "type:data-access",
+            "onlyDependOnLibsWithTags": [ "type:model"]
+          }
+        ]
+      }
+    ]
+  }
+}
