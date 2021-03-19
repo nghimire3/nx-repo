@@ -1,65 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Product } from '@ecommerce/products/models';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
+/*
+  Fetches mock data
+ */
 @Injectable()
 export class ProductService {
-  products: Product[];
 
-  constructor() {
-    this.products = [{
-      id: 1,
-      name: "Product 1",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "100",
-      hero: "OMG This just came out today!",
-      "image": "http://placehold.it/940x300/999/CCC"
-    },{
-      id: 2,
-      name: "Product 2",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "355",
-      hero: "This is the latest and greatest product from Derp corp.",
-      image: "http://placehold.it/300x300/999/CCC"
-    },{
-      id: 3,
-      name: "Product 3",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "450",
-      hero: "BOGOF",
-      image: "http://placehold.it/300x300/999/CCC"
-    },{
-      id: 4,
-      name: "Product 4",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "600",
-      image: "http://placehold.it/300x300/999/CCC"
-    },{
-      id: 5,
-      name: "Product 5",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "99",
-      hero: "No srsly GTFO",
-      image: "http://placehold.it/300x300/999/CCC"
-    },{
-      id: 6,
-      name: "Product 6",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "877",
-      image: 'http://placehold.it/300x300/999/CCC'
-    },{
-      id: 7,
-      name: "Product 7",
-      detail: "Lorem ipsum dolor sit amet",
-      price: "295",
-      hero: "This is the latest and greatest product from Derp corp.",
-      image: "http://placehold.it/300x300/999/CCC"
-    }]
-  }
+  constructor(private http: HttpClient) {}
 
-  // Get list of products-container
   getProducts(): Observable<Product[]> {
-    return of(this.products);
+    return this.http.get<Product[]>("assets/mockData.json");
   }
+
+  public getProduct(id: number): Observable<Product>{
+    return this.getProducts().pipe(
+      map(products => products.find(product => product.id === id))
+    );
+  }
+
 
 }
