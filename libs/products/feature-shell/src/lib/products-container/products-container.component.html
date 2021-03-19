@@ -1,12 +1,9 @@
-<div [ngClass]="{'collapse-container': collapsedMode, 'expanded-container': !collapsedMode }">
+<div [ngClass]="{'collapse-container': collapsedMode, 'expanded-container': expandedMode }">
   <div class='product-list'>
-    <ecommerce-product-list-container
-      [collapseButtonIsEnabled] = 'collapsedMode'
-      (collapsedMode)='onCollapseButtonClick($event)'
-      (expandedMode)='onExpandedButtonClick($event)'
-    ></ecommerce-product-list-container>
+    <ecommerce-product-list-container></ecommerce-product-list-container>
   </div>
   <div class='product-details'>
     <ecommerce-product-details-container></ecommerce-product-details-container>
   </div>
 </div>
+
